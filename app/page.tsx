@@ -161,13 +161,14 @@ export default function Home() {
               description="Developed a browser game where players must correctly guess the letters of mystery words, which come in several different themes: movies, video games, sports, etc."
               techStack={["React", "Node.js", "Express.js", "MongoDB"]}
               githubLink="https://github.com/jawuanlewis/hangman-web-app"
-              demoLink="https://hangman-web-app-466f2d94c639.herokuapp.com"
+              demoLink="https://hangman.jawuanlewis.dev"
             />
             <ProjectCard
               title="Jawuan's GPT"
               description="Built a personal chatbot that provides persistent chat history and effective responses to user questions, powered by OpenAI's GPT-4 models."
               techStack={["React", "TypeScript", "Node.js", "MongoDB"]}
               githubLink="https://github.com/jawuanlewis/gpt-powered-chatbot"
+              demoLink="https://gpt.jawuanlewis.dev"
             />
             <ProjectCard
               title="Demographic Income Insights"
