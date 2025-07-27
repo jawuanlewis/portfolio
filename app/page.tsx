@@ -128,22 +128,19 @@ export default function Home() {
           </h2>
           <div className="max-w-3xl mx-auto">
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-              I&apos;m a master&apos;s student in Computer Science at Arizona
-              State University, concentrating in Big Data Systems, and
-              graduating at the end of the year. I&apos;m passionate about
-              building scalable, impactful software that solves real problems
-              and benefits communities. My academic journey and project work
-              have helped me develop a strong foundation in full-stack
-              development, data systems, and a bit of AI—tools I love using to
-              bring ideas to life.
+              I am a master&apos;s student in Computer Science at Arizona State
+              University, concentrating in Big Data Systems, and graduating at
+              the end of the year. I&apos;m passionate about leveraging
+              technology to bring ideas to life. My academic and professional
+              journeys have helped me develop a strong foundation in full-stack
+              development, data systems, and a bit of AI.
             </p>
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-              Outside of academics, I enjoy keeping things creative—whether
-              that&apos;s coding a MERN-based version of Hangman for fun, or
-              sketching, playing basketball, or getting into a good movie.
-              I&apos;m currently seeking full-time software engineering roles
-              where I can grow as a developer, collaborate with great teams, and
-              contribute to projects that make a difference.
+              Outside of academics, you&apos;ll often find me building software
+              projects, drawing, playing basketball, or getting into a good
+              movie; I enjoy keeping things creative! I&apos;m always seeking
+              opportunities to grow as a developer, collaborate with great
+              teams, and contribute to projects that make a difference.
             </p>
           </div>
         </div>
@@ -323,9 +320,9 @@ export default function Home() {
                 Get In Touch
               </h3>
               <p className="text-gray-700 dark:text-gray-300 mb-6">
-                I&apos;m currently looking for new opportunities in software
-                engineering. Whether you have a question or just want to say hi,
-                I&apos;d love to connect!
+                I am always open to meeting new people or learning about
+                opportunities. Feel free to reach out, I&apos;m happy to
+                connect!
               </p>
               <div className="space-y-4">
                 <div className="flex items-center">
