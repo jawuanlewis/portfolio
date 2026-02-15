@@ -87,8 +87,8 @@ export default function Home() {
                 </span>
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">
-                Master&apos;s student in Computer Science passionate about
-                building innovative software solutions.
+                Software engineer passionate about building innovative
+                solutions.
               </p>
               <div className="flex gap-4">
                 <Link

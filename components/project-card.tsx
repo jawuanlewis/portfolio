@@ -15,7 +15,7 @@ export default function ProjectCard({
   techStack,
   githubLink,
   demoLink,
-}: ProjectCardProps) {
+}: Readonly<ProjectCardProps>) {
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
       <div className="p-6">

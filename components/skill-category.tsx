@@ -3,7 +3,10 @@ interface SkillCategoryProps {
   skills: string[];
 }
 
-export default function SkillCategory({ title, skills }: SkillCategoryProps) {
+export default function SkillCategory({
+  title,
+  skills,
+}: Readonly<SkillCategoryProps>) {
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6 hover:shadow-md transition">
       <h3 className="text-xl font-bold mb-4 dark:text-white">{title}</h3>
