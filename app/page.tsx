@@ -259,6 +259,17 @@ export default function Home() {
           </h2>
           <div className="max-w-3xl mx-auto space-y-12">
             <ExperienceItem
+              title="Software Engineer"
+              company="Fullbay"
+              period="July 2025 - Present"
+              description="Working on the Analytics & Insights team to build backend data solutions powering customer analytics."
+              achievements={[
+                "Architected scalable REST APIs powering internal analytics and customer data workflows",
+                "Developed a public AWS-based API enabling secure, authenticated access to analytics data",
+                "Led backend refactors and performance improvements that increased reliability of analytics infrastructure",
+              ]}
+            />
+            <ExperienceItem
               title="Backend Engineer Intern"
               company="Cadent"
               period="February 2025 - May 2025"
@@ -284,14 +295,14 @@ export default function Home() {
               title="Software Development Engineer Intern"
               company="Amazon"
               period="June 2023 - September 2023"
-              description="Worked on the Amazon Photos team to ensure customer data integrity."
+              description="Collaborated with the Amazon Photos team to ensure customer data integrity."
               achievements={[
                 "Reinstated an internal system to identify anomalies within customer data",
                 "Constructed a plan to eliminate the discrepancies, achieving 99.999% consistency",
                 "Led a system-wide migration to a new data source for reading content from S3",
               ]}
             />
-            <ExperienceItem
+            {/* <ExperienceItem
               title="Software Development Intern"
               company="Sandhills Global"
               period="March 2022 - May 2023"
@@ -301,7 +312,7 @@ export default function Home() {
                 "Delivered full-stack product updates in response to stakeholder feedback",
                 "Leveraged ASP.NET and internal APIs to build efficient web services",
               ]}
-            />
+            /> */}
           </div>
         </div>
       </section>
