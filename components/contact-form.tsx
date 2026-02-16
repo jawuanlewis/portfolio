@@ -40,7 +40,7 @@ export default function ContactForm() {
           message: formData.message,
           to_name: "Jawuan Lewis",
         },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       );
 
       setSubmitStatus("success");

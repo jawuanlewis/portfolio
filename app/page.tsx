@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 import ContactForm from "@/components/contact-form";
 import ProjectCard from "@/components/project-card";
 import SkillCategory from "@/components/skill-category";
@@ -87,8 +88,8 @@ export default function Home() {
                 </span>
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-400 mb-8">
-                Master&apos;s student in Computer Science passionate about
-                building innovative software solutions.
+                Software engineer passionate about building high-quality
+                solutions.
               </p>
               <div className="flex gap-4">
                 <Link
@@ -128,19 +129,19 @@ export default function Home() {
           </h2>
           <div className="max-w-3xl mx-auto">
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-              I am a master&apos;s student in Computer Science at Arizona State
-              University, concentrating in Big Data Systems, and graduating at
-              the end of the year. I&apos;m passionate about leveraging
-              technology to bring ideas to life. My academic and professional
-              journeys have helped me develop a strong foundation in full-stack
-              development, data systems, and a bit of AI.
+              I&apos;m a software engineer with a Master&apos;s degree in
+              Computer Science from Arizona State University, where I
+              concentrated in Big Data Systems. I&apos;m passionate about using
+              technology to turn ideas into impactful solutions, with a strong
+              foundation in full-stack development, data systems, and emerging
+              AI-driven applications.
             </p>
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-              Outside of academics, you&apos;ll often find me building software
-              projects, drawing, playing basketball, or getting into a good
-              movie; I enjoy keeping things creative! I&apos;m always seeking
-              opportunities to grow as a developer, collaborate with great
-              teams, and contribute to projects that make a difference.
+              Outside of work, you&apos;ll often find me building side projects,
+              drawing, playing basketball, or getting into a good movie; I enjoy
+              keeping things creative. I&apos;m always looking for opportunities
+              to grow as a developer, collaborate with great teams, and
+              contribute to meaningful projects.
             </p>
           </div>
         </div>
@@ -157,7 +158,7 @@ export default function Home() {
               title="Hangman"
               description="Developed a browser game where players must correctly guess the letters of mystery words, which come in several different themes: movies, video games, sports, etc."
               techStack={["React", "Node.js", "Express.js", "MongoDB"]}
-              githubLink="https://github.com/jawuanlewis/hangman-web-app"
+              githubLink="https://github.com/jawuanlewis/hangman-client"
               demoLink="https://hangman.jawuanlewis.dev"
             />
             <ProjectCard
@@ -206,42 +207,40 @@ export default function Home() {
             <SkillCategory
               title="Programming Languages"
               skills={[
-                "Python",
                 "Java",
-                "C#",
                 "JavaScript",
                 "TypeScript",
+                "Python",
+                "C#",
                 "C++",
-                "HTML",
-                "CSS",
                 "SQL",
               ]}
             />
             <SkillCategory
               title="Frameworks & Libraries"
-              skills={["React", "Node.js", "Express.js", "ASP.NET"]}
+              skills={["React", "Node.js", "Express.js", "Quarkus", "ASP.NET"]}
             />
             <SkillCategory
               title="Tools & Platforms"
               skills={[
                 "AWS",
                 "Git",
+                "Harness",
                 "GitHub Actions",
                 "Jupyter Notebook",
                 "Figma",
-                "Jira",
               ]}
             />
             <SkillCategory
               title="Databases"
-              skills={["MongoDB", "PostgreSQL", "MySQL"]}
+              skills={["Snowflake", "MongoDB", "PostgreSQL", "MySQL"]}
             />
             <SkillCategory
               title="Methodologies"
-              skills={["Agile", "Scrum", "CI/CD", "TDD", "System Design"]}
+              skills={["Agile", "CI/CD", "REST APIs", "System Design", "TDD"]}
             />
             <SkillCategory
-              title="Other Skills"
+              title="Areas of Interest"
               skills={[
                 "Data Science",
                 "Machine Learning",
@@ -260,6 +259,17 @@ export default function Home() {
             Experience
           </h2>
           <div className="max-w-3xl mx-auto space-y-12">
+            <ExperienceItem
+              title="Software Engineer"
+              company="Fullbay"
+              period="July 2025 - Present"
+              description="Working on the Analytics & Insights team to build backend data solutions powering customer analytics."
+              achievements={[
+                "Architected scalable REST APIs powering internal analytics and customer data workflows",
+                "Developed a public AWS-based API enabling secure, authenticated access to analytics data",
+                "Led backend refactors and performance improvements that increased reliability of analytics infrastructure",
+              ]}
+            />
             <ExperienceItem
               title="Backend Engineer Intern"
               company="Cadent"
@@ -286,14 +296,14 @@ export default function Home() {
               title="Software Development Engineer Intern"
               company="Amazon"
               period="June 2023 - September 2023"
-              description="Worked on the Amazon Photos team to ensure customer data integrity."
+              description="Collaborated with the Amazon Photos team to ensure customer data integrity."
               achievements={[
                 "Reinstated an internal system to identify anomalies within customer data",
                 "Constructed a plan to eliminate the discrepancies, achieving 99.999% consistency",
                 "Led a system-wide migration to a new data source for reading content from S3",
               ]}
             />
-            <ExperienceItem
+            {/* <ExperienceItem
               title="Software Development Intern"
               company="Sandhills Global"
               period="March 2022 - May 2023"
@@ -303,7 +313,7 @@ export default function Home() {
                 "Delivered full-stack product updates in response to stakeholder feedback",
                 "Leveraged ASP.NET and internal APIs to build efficient web services",
               ]}
-            />
+            /> */}
           </div>
         </div>
       </section>
@@ -335,7 +345,7 @@ export default function Home() {
                   </a>
                 </div>
                 <div className="flex items-center">
-                  <Linkedin className="h-5 w-5 mr-3 text-gray-700 dark:text-gray-300" />
+                  <SiLinkedin className="h-5 w-5 mr-3 text-gray-700 dark:text-gray-300" />
                   <a
                     href="https://linkedin.com/in/jawuan-lewis"
                     target="_blank"
@@ -346,7 +356,7 @@ export default function Home() {
                   </a>
                 </div>
                 <div className="flex items-center">
-                  <Github className="h-5 w-5 mr-3 text-gray-700 dark:text-gray-300" />
+                  <SiGithub className="h-5 w-5 mr-3 text-gray-700 dark:text-gray-300" />
                   <a
                     href="https://github.com/jawuanlewis"
                     target="_blank"
@@ -404,7 +414,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 aria-label="GitHub"
               >
-                <Github className="h-5 w-5" />
+                <SiGithub className="h-5 w-5" />
               </a>
               <a
                 href="https://linkedin.com/in/jawuan-lewis"
@@ -412,7 +422,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="h-5 w-5" />
+                <SiLinkedin className="h-5 w-5" />
               </a>
               <a href="mailto:jawuan.lewis4@gmail.com" aria-label="Email">
                 <Mail className="h-5 w-5" />

@@ -12,7 +12,7 @@ export default function ExperienceItem({
   period,
   description,
   achievements,
-}: ExperienceItemProps) {
+}: Readonly<ExperienceItemProps>) {
   return (
     <div className="border-l-4 border-gray-300 dark:border-gray-700 pl-6">
       <h3 className="text-xl font-bold dark:text-white">{title}</h3>
