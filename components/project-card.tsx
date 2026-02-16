@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Github, ExternalLink } from "lucide-react";
+import { ExternalLink } from "lucide-react";
+import { SiGithub } from "react-icons/si";
 
 interface ProjectCardProps {
   title: string;
@@ -40,7 +41,7 @@ export default function ProjectCard({
             rel="noopener noreferrer"
             className="flex items-center text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
           >
-            <Github className="h-4 w-4 mr-1" />
+            <SiGithub className="h-4 w-4 mr-1" />
             <span>Code</span>
           </Link>
           {demoLink && (

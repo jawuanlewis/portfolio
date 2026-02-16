@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 import ContactForm from "@/components/contact-form";
 import ProjectCard from "@/components/project-card";
 import SkillCategory from "@/components/skill-category";
@@ -344,7 +345,7 @@ export default function Home() {
                   </a>
                 </div>
                 <div className="flex items-center">
-                  <Linkedin className="h-5 w-5 mr-3 text-gray-700 dark:text-gray-300" />
+                  <SiLinkedin className="h-5 w-5 mr-3 text-gray-700 dark:text-gray-300" />
                   <a
                     href="https://linkedin.com/in/jawuan-lewis"
                     target="_blank"
@@ -355,7 +356,7 @@ export default function Home() {
                   </a>
                 </div>
                 <div className="flex items-center">
-                  <Github className="h-5 w-5 mr-3 text-gray-700 dark:text-gray-300" />
+                  <SiGithub className="h-5 w-5 mr-3 text-gray-700 dark:text-gray-300" />
                   <a
                     href="https://github.com/jawuanlewis"
                     target="_blank"
@@ -413,7 +414,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 aria-label="GitHub"
               >
-                <Github className="h-5 w-5" />
+                <SiGithub className="h-5 w-5" />
               </a>
               <a
                 href="https://linkedin.com/in/jawuan-lewis"
@@ -421,7 +422,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="h-5 w-5" />
+                <SiLinkedin className="h-5 w-5" />
               </a>
               <a href="mailto:jawuan.lewis4@gmail.com" aria-label="Email">
                 <Mail className="h-5 w-5" />
