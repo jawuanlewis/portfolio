@@ -155,24 +155,25 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ProjectCard
+              title="Soundalike"
+              description="Created an app to search and select songs then receive a new list of similar songs, integrating Spotify's Search API with Last.fm's similarity engine."
+              techStack={["React", "TypeScript", "Fastify", "Vite"]}
+              githubLink="https://github.com/jawuanlewis/song-similarity-app"
+              appLink="https://soundalike.jawuanlewis.dev"
+            />
+            <ProjectCard
+              title="Glimpse"
+              description="Published a Chrome extension that displays instant word definitions, phonetics, and audio pronunciations on text highlight, leveraging the Free Dictionary API."
+              techStack={["JavaScript", "Manifest V3", "Free Dictionary API"]}
+              githubLink="https://github.com/jawuanlewis/glimpse-ext"
+              appLink="https://chromewebstore.google.com/detail/ampidfgddfkbpibhppmjclafaeajcbfl?utm_source=item-share-cb"
+            />
+            <ProjectCard
               title="Hangman"
               description="Developed a browser game where players must correctly guess the letters of mystery words, which come in several different themes: movies, video games, sports, etc."
               techStack={["React", "Node.js", "Express.js", "MongoDB"]}
               githubLink="https://github.com/jawuanlewis/hangman-client"
-              demoLink="https://hangman.jawuanlewis.dev"
-            />
-            <ProjectCard
-              title="Jawuan's GPT"
-              description="Built a personal chatbot that provides persistent chat history and effective responses to user questions, powered by OpenAI's GPT-4 models."
-              techStack={["React", "TypeScript", "Node.js", "MongoDB"]}
-              githubLink="https://github.com/jawuanlewis/gpt-powered-chatbot"
-              demoLink="https://gpt.jawuanlewis.dev"
-            />
-            <ProjectCard
-              title="Demographic Income Insights"
-              description="Created a dashboard of data visualizations to analyze the impact of certain demographic factors on an individual's income."
-              techStack={["Python", "Jupyter Notebook", "Pandas", "Matplotlib"]}
-              githubLink="https://github.com/jawuanlewis/demographic-income-insights"
+              appLink="https://hangman.jawuanlewis.dev"
             />
             {/* <ProjectCard
               title="Personal Finance Tracker"
@@ -191,7 +192,7 @@ export default function Home() {
               description="Implemented a secure and transparent voting system using Ethereum blockchain technology."
               techStack={["Solidity", "Web3.js", "React", "Node.js"]}
               githubLink="https://github.com/johndoe/blockchain-voting"
-              demoLink="https://blockchain-voting-demo.example.com"
+              appLink="https://blockchain-voting-demo.example.com"
             /> */}
           </div>
         </div>
@@ -207,10 +208,10 @@ export default function Home() {
             <SkillCategory
               title="Programming Languages"
               skills={[
-                "Java",
                 "JavaScript",
                 "TypeScript",
                 "Python",
+                "Java",
                 "C#",
                 "C++",
                 "SQL",
@@ -263,11 +264,11 @@ export default function Home() {
               title="Software Engineer"
               company="Fullbay"
               period="July 2025 - Present"
-              description="Working on the Analytics & Insights team to build backend data solutions powering customer analytics."
+              description="Working on the Parts team to build infrastructure and business logic for how parts get ordered, tracked, and installed."
               achievements={[
-                "Architected scalable REST APIs powering internal analytics and customer data workflows",
-                "Developed a public AWS-based API enabling secure, authenticated access to analytics data",
-                "Led backend refactors and performance improvements that increased reliability of analytics infrastructure",
+                "Led integration with the Financials team to keep purchase orders and returns running smoothly",
+                "Owned the logic for returning and writing off used parts (called Cores) for credit",
+                "Kicked off backend and UI refactors to make the Parts experience cleaner for users",
               ]}
             />
             <ExperienceItem
