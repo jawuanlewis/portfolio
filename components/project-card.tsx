@@ -7,7 +7,7 @@ interface ProjectCardProps {
   description: string;
   techStack: string[];
   githubLink: string;
-  demoLink?: string;
+  appLink?: string;
 }
 
 export default function ProjectCard({
@@ -15,7 +15,7 @@ export default function ProjectCard({
   description,
   techStack,
   githubLink,
-  demoLink,
+  appLink,
 }: Readonly<ProjectCardProps>) {
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition">
@@ -44,15 +44,15 @@ export default function ProjectCard({
             <SiGithub className="h-4 w-4 mr-1" />
             <span>Code</span>
           </Link>
-          {demoLink && (
+          {appLink && (
             <Link
-              href={demoLink}
+              href={appLink}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
             >
               <ExternalLink className="h-4 w-4 mr-1" />
-              <span>Demo</span>
+              <span>App</span>
             </Link>
           )}
         </div>
